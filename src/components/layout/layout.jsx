@@ -18,7 +18,10 @@ import Typography from "@material-ui/core/Typography";
 import { useTheme } from "@material-ui/core/styles";
 import MainContent from "./mainContent";
 
-import { link, useStyles } from "../../constants/constSidebar";
+import { links, useStyles } from "../../constants/constSidebar";
+import { brandName } from "../../constants/constNavbar";
+import { Link } from "react-router-dom";
+import UserInfo from "./userInfo";
 
 function ResponsiveDrawer(props) {
   const { window } = props;
@@ -34,14 +37,14 @@ function ResponsiveDrawer(props) {
     <div>
       <div className={classes.toolbar} />
 
+      <UserInfo />
+
       <Divider />
+      {/* Sidebar Liks */}
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
+        {links.map((item) => (
+          <ListItem key={item.id} button component={Link}>
+            <ListItemText primary={item.title} />
           </ListItem>
         ))}
       </List>
@@ -54,11 +57,10 @@ function ResponsiveDrawer(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
+      {/* <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <IconButton
             color="inherit"
-            aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
             className={classes.menuButton}
@@ -66,10 +68,10 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Responsive drawer
+            {brandName}
           </Typography>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
       <nav className={classes.drawer}>
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
