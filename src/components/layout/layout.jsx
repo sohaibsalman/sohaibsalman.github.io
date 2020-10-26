@@ -37,7 +37,7 @@ function ResponsiveDrawer(props) {
       {/* Sidebar Liks */}
       <List>
         {links.map((item) => (
-          <ListItem key={item.id} button component={Link}>
+          <ListItem key={item.id} button component={Link} to={item.url}>
             <ListItemText primary={item.title} />
           </ListItem>
         ))}
