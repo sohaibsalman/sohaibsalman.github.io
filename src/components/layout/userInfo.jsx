@@ -1,6 +1,7 @@
-import { Typography } from "@material-ui/core";
+import { Divider, Typography } from "@material-ui/core";
 import React from "react";
 import dp from "../../static/images/profile/sohaib.jpg";
+import SocialLinks from "../common/socialLinks/socialLinks";
 
 const user = {
   fullName: "Sohaib Salman",
@@ -11,17 +12,26 @@ const user = {
 const UserInfo = () => {
   return (
     <React.Fragment>
-      <center style={{ padding: "20px 10px" }}>
-        <Typography variant="h5" style={{ fontWeight: "bold" }}>
-          {user.fullName}
-        </Typography>
-        <img
-          src={dp}
-          alt="Sohaib Salman"
-          style={{ width: "180px", borderRadius: "50%", margin: "18px 0" }}
-        />
-        <Typography style={{ fontSize: "14px" }}>{user.description}</Typography>
-      </center>
+      <div className="userInfo">
+        <center>
+          <Typography
+            variant="h5"
+            style={{ fontWeight: "bold", margin: "18px 0" }}
+          >
+            {user.fullName}
+          </Typography>
+          <img
+            src={dp}
+            alt="Sohaib Salman"
+            style={{ width: "180px", borderRadius: "50%" }}
+          />
+          <Typography style={{ fontSize: "14px", margin: "20px 0" }}>
+            {user.description}
+          </Typography>
+
+          <SocialLinks />
+        </center>
+      </div>
     </React.Fragment>
   );
 };
