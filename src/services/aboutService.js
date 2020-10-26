@@ -1,10 +1,10 @@
-import Picutre from "../static/images/profile/sohaib.jpg";
+import Picutre from "../static/images/about/user.jpg";
 
 const aboutHeader = {
   heading: "Sohaib Salman",
   subHeading: "Software Developer",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium? Assumenda saepe repudiandae necessitatibus inventore? Sapiente sequi laboriosam veniam.",
+    "I'm a software developer and a self learner, specialized in front-end and back-end development for large scale and complex web apps, along with a good knowledge of developing business level desktop apps.",
   column: {
     status: true,
     size: 6,
@@ -19,7 +19,7 @@ const aboutHeader = {
 const whatIDo = {
   heading: "What I do",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium? Assumenda saepe repudiandae necessitatibus inventore? Sapiente sequi laboriosam veniam.",
+    "I have designed and developed many web and desktop applications throughout my journey in software development. Below is a quick overview of my main technical skill sets and technologies I use.",
   skills: [
     {
       id: 1,
@@ -29,7 +29,7 @@ const whatIDo = {
       ],
       title: "Javascript & Typescript",
       desription:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium?",
+        "Good working knowledge of Javascript to develop dynamic web applications. Have a good understanding of the ES6, along with some familiarity with Typescript.",
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ const whatIDo = {
       ],
       title: "React and Angular",
       desription:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium?",
+        "Intermediate level understanding of React js for building Single Page Apps, along with some beginner-level understanding of Angular Framework.",
     },
     {
       id: 2,
@@ -50,14 +50,7 @@ const whatIDo = {
       ],
       title: "HTML, CSS & Bootstrap",
       desription:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium?",
-    },
-    {
-      id: 3,
-      icons: ["devicon-sass-original colored"],
-      title: "Sass",
-      desription:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium?",
+        "Advanced level understanding of HTML and CSS for making a good looking basic structure of a website. Good grip on bootstrap for making a webpage fully responsive!",
     },
     {
       id: 4,
@@ -68,21 +61,21 @@ const whatIDo = {
       ],
       title: ".NET, PHP & Servlets",
       desription:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium?",
+        "Have developed a lot of web apps using simple .NET (Web Forms, MVC, Web API) & .NET Core Web API. Also worked in PHP & Java Servlets as backend technologies.",
     },
     {
       id: 5,
       icons: ["devicon-mysql-plain colored"],
       title: "MySQL & SQL Server",
       desription:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium?",
+        "Excellent in databse concepts and proficient with SQL language. Have worked with SQL Server and MySQL. Also, have a basic understanding of ORMs such as Entity Framework. ",
     },
     {
       id: 6,
       icons: ["devicon-android-plain colored"],
       title: "Android",
       desription:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium?",
+        "Started learning android and currently working on it. Have a beginner's level understanding of android application development. Looking forward to learning more!",
     },
     {
       id: 7,
@@ -94,7 +87,7 @@ const whatIDo = {
       ],
       title: "C#, C++, Java & Python",
       desription:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eos magnam quas, repellendus quos quia unde at, officiis exercitationem ut praesentium?",
+        "Excellent in core programming languages like C#, C++, and Java, along with good hands-on skills in object-oriented programming, data structures, and design patterns.",
     },
   ],
 };
