@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
+import "devicon/devicon.min.css";
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

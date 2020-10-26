@@ -1,9 +1,8 @@
 const links = [
   { id: 1, title: "About", url: "/about" },
-  { id: 2, title: "Skills", url: "/skills" },
-  { id: 3, title: "Portfolio", url: "/portfolio" },
-  { id: 4, title: "Services", url: "/services" },
-  { id: 5, title: "Contact", url: "/contact" },
+  { id: 2, title: "Portfolio", url: "/portfolio" },
+  { id: 3, title: "Services", url: "/services" },
+  { id: 4, title: "Contact", url: "/contact" },
 ];
 
 const userInfo = {

@@ -22,11 +22,12 @@ const PageHeader = ({ headerData }) => {
               <HeaderButtons buttons={headerData.buttons} />
             )}
           </Grid>
-          <Grid item>
-            <Typography variant="h3">Image</Typography>
+          <Grid item md={headerData.column && headerData.column.size}>
+            <img src={headerData.image} alt="" width="100%" />
           </Grid>
         </Grid>
       </div>
+      <Divider />
     </React.Fragment>
   );
 };

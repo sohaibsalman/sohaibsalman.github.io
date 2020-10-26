@@ -4,7 +4,6 @@ const Skills = () => {
   return (
     <React.Fragment>
       <h1>Skills</h1>
-      <h1>Skills</h1>
     </React.Fragment>
   );
 };
