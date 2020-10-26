@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -8,14 +9,14 @@ import Hidden from "@material-ui/core/Hidden";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-
 import { useTheme } from "@material-ui/core/styles";
+
+import UserInfo from "./userInfo";
 import MainContent from "./mainContent";
 
-import { links, useStyles } from "../../constants/constSidebar";
-import { brandName } from "../../constants/constNavbar";
-import { Link } from "react-router-dom";
-import UserInfo from "./userInfo";
+import { brandName } from "../../styles/navbarStyle";
+import { getSidebarLinks } from "../../services/sidebarService";
+import { useStyles } from "../../styles/sidebarStyle";
 
 import "./layout.css";
 
@@ -28,6 +29,8 @@ function ResponsiveDrawer(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  const links = getSidebarLinks();
 
   const drawer = (
     <div>

@@ -3,11 +3,9 @@ import React from "react";
 import dp from "../../static/images/profile/sohaib.jpg";
 import SocialLinks from "../common/socialLinks/socialLinks";
 
-const user = {
-  fullName: "Sohaib Salman",
-  description:
-    "Hi, my name is Sohaib Salman and I'm a Software Developer. Welcome to my personal website",
-};
+import { getUserInfo } from "../../services/sidebarService";
+
+const user = getUserInfo();
 
 const UserInfo = () => {
   return (

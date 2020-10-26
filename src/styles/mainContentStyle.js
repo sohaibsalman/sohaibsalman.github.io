@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-import { drawerWidth } from "./constSidebar";
+import { drawerWidth } from "./sidebarStyle";
 
 const useStyles = makeStyles((theme) => ({
   // necessary for content to be below app bar

@@ -32,12 +32,4 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const links = [
-  { id: 1, title: "About", url: "/about" },
-  { id: 2, title: "Skills", url: "/skills" },
-  { id: 3, title: "Portfolio", url: "/portfolio" },
-  { id: 4, title: "Services", url: "/services" },
-  { id: 5, title: "Contact", url: "/contact" },
-];
-
-export { links, useStyles, drawerWidth };
+export { useStyles, drawerWidth };

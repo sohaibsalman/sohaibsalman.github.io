@@ -7,13 +7,13 @@ import Portfolio from "../pages/portfolio/portfolio";
 import Services from "../pages/services/services";
 import Contact from "../pages/contact/contact";
 
-import { useStyles } from "../../constants/constMainContent";
+import { useStyles } from "../../styles/mainContentStyle";
 
 const MainContent = () => {
   const classes = useStyles();
   return (
     <main className={classes.content}>
-      <div className={classes.toolbar} />
+      {/* // <div className={classes.toolbar} /> */}
       <Switch>
         <Route path="/skills" component={Skills} />
         <Route path="/portfolio" component={Portfolio} />
