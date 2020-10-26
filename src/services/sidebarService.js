@@ -9,7 +9,7 @@ const links = [
 const userInfo = {
   fullName: "Sohaib Salman",
   description:
-    "Hi, my name is Sohaib Salman and I'm a Software Developer. Welcome to my personal website",
+    "Hi, my name is Sohaib Salman and I'm a software developer. Welcome to my personal website",
 };
 
 export function getSidebarLinks() {
