@@ -1,10 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import Header from "../../common/header";
+import { getContactHeader } from "./../../../services/contactService";
 
-class Contact extends Component {
-  state = {};
-  render() {
-    return <h1>Contact</h1>;
-  }
-}
+const Contact = () => {
+  const header = getContactHeader();
+  return (
+    <React.Fragment>
+      <Header heading={header.heading} description={header.description} />
+    </React.Fragment>
+  );
+};
 
 export default Contact;

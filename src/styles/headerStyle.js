@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
     margin: "10px 0",
     fontWeight: "lighter",
   },
+  description: {
+    padding: "0 100px",
+    margin: "20px 0",
+  },
   buttons: {
     "& > *": {
       marginRight: theme.spacing(1),

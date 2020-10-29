@@ -1,7 +1,14 @@
 import React from "react";
+import Header from "../../common/header";
+import { getServicesHeader } from "./../../../services/servicesService";
 
-const Services = () => {
-  return <h1>Services</h1>;
+const Service = () => {
+  const header = getServicesHeader();
+  return (
+    <React.Fragment>
+      <Header heading={header.heading} description={header.description} />
+    </React.Fragment>
+  );
 };
 
-export default Services;
+export default Service;

@@ -3,7 +3,7 @@ import { Button, Divider, Grid, Typography } from "@material-ui/core";
 
 import { useStyles } from "../../styles/headerStyle";
 
-const PageHeader = ({ headerData }) => {
+const AboutHeader = ({ headerData }) => {
   const classes = useStyles();
   return (
     <React.Fragment>
@@ -48,4 +48,4 @@ const HeaderButtons = ({ buttons }) => {
   );
 };
 
-export default PageHeader;
+export default AboutHeader;

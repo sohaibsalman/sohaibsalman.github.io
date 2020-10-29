@@ -1,7 +1,7 @@
 import React from "react";
 import { Divider, Grid, Paper, Typography } from "@material-ui/core";
 
-import PageHeader from "../../common/pageHeader";
+import AboutHeader from "../../common/aboutHeader";
 import Heading from "../../common/heading";
 import Timeline from "../../common/timeline";
 
@@ -18,7 +18,7 @@ const About = () => {
   const headerData = getAboutHeader();
   return (
     <React.Fragment>
-      <PageHeader headerData={headerData} />
+      <AboutHeader headerData={headerData} />
       <AboutBody />
     </React.Fragment>
   );

@@ -1,10 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import Header from "../../common/header";
+import { getPortfolioHeader } from "./../../../services/portfolioService";
 
-class Portfolio extends Component {
-  state = {};
-  render() {
-    return <h1>Portfolio</h1>;
-  }
-}
+const Portfolio = () => {
+  const header = getPortfolioHeader();
+  return (
+    <React.Fragment>
+      <Header heading={header.heading} description={header.description} />
+    </React.Fragment>
+  );
+};
 
 export default Portfolio;
