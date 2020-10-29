@@ -14,6 +14,7 @@ import MainContent from "./mainContent";
 
 import { getSidebarLinks } from "../../services/sidebarService";
 import { useStyles } from "../../styles/sidebarStyle";
+import { ListItemIcon } from "@material-ui/core";
 
 function ResponsiveDrawer(props) {
   const { window } = props;
@@ -40,6 +41,7 @@ function ResponsiveDrawer(props) {
             to={item.url}
             activeClassName={classes.active}
           >
+            <ListItemIcon>{item.icon}</ListItemIcon>
             <ListItemText primary={item.title} />
           </ListItem>
         ))}

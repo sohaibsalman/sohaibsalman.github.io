@@ -1,7 +1,7 @@
 import { Divider, Typography } from "@material-ui/core";
 import React from "react";
 import dp from "../../static/images/profile/sohaib.jpg";
-import SocialLinks from "../common/socialLinks/socialLinks";
+import SocialLinks from "../common/socialLinks";
 
 import { getUserInfo } from "../../services/sidebarService";
 

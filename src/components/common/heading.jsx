@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   headingDiv: {
-    borderLeft: "5px solid black",
+    borderLeft: "5px solid #3f51b5",
     padding: "0 15px",
     margin: "20px 0",
   },

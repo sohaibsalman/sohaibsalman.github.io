@@ -1,5 +1,7 @@
+import { Person } from "@material-ui/icons";
+
 const links = [
-  { id: 1, title: "About", url: "/about" },
+  { id: 1, title: "About", url: "/about", icon: <Person /> },
   // { id: 2, title: "Portfolio", url: "/portfolio" },
   // { id: 3, title: "Services", url: "/services" },
   // { id: 4, title: "Contact", url: "/contact" },

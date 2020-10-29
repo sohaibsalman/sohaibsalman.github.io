@@ -1,7 +1,7 @@
 import React from "react";
 
 import { GitHub, Facebook, Instagram, LinkedIn } from "@material-ui/icons";
-import { Grid, Typography } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 const socialIcons = [
   {

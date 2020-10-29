@@ -3,6 +3,7 @@ import { Divider, Grid, Paper, Typography } from "@material-ui/core";
 
 import PageHeader from "../../common/pageHeader";
 import Heading from "../../common/heading";
+import Timeline from "../../common/timeline";
 
 import {
   getAboutHeader,
@@ -12,14 +13,6 @@ import {
 } from "../../../services/aboutService";
 
 import { useStyles } from "../../../styles/pageStyle";
-import {
-  Timeline,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-  TimelineItem,
-  TimelineSeparator,
-} from "@material-ui/lab";
 
 const About = () => {
   const headerData = getAboutHeader();
@@ -85,33 +78,23 @@ const Skills = () => {
 
 const Education = () => {
   const academic = getAcademicInfo();
-  const classes = useStyles();
   return (
     <React.Fragment>
       <Heading heading={academic.heading} />
       <Typography>{academic.description}</Typography>
-      <Timeline>
+      <div className="timeline">
         {academic.education.map((education) => {
           return (
-            <TimelineItem style={{ flex: 0 }}>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-                <Typography
-                  variant="h6"
-                  style={{ textTransform: "uppercase", fontWeight: "bold" }}
-                >
-                  {education.degree}
-                </Typography>
-                <Typography>{education.duration}</Typography>
-                <Typography>{education.institute}</Typography>
-              </TimelineContent>
-            </TimelineItem>
+            <Timeline
+              key={education.id}
+              heading={education.degree}
+              date={education.duration}
+              subHeading={education.institute}
+              description={education.description}
+            />
           );
         })}
-      </Timeline>
+      </div>
     </React.Fragment>
   );
 };

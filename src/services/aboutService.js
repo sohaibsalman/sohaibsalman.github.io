@@ -100,24 +100,27 @@ const academicInfo = {
   education: [
     {
       id: 1,
-      icon: <School fontSize="large" />,
       degree: "Bachelor of Science in Information Technology",
       duration: "Current",
       institute: "Punjab University College of Information Techology.",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deleniti in fuga adipisci saepe dolores libero maiores blanditiis, nisi aliquam rem quo ullam ratione doloremque repellendus sequi accusantium voluptates beatae.",
     },
     {
       id: 2,
-      icon: <School fontSize="large" />,
       degree: "Intermediate in Computer Science",
       duration: "2017",
       institute: "Superior College of Information Technology.",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deleniti in fuga adipisci saepe dolores libero maiores blanditiis, nisi aliquam rem quo ullam ratione doloremque repellendus sequi accusantium voluptates beatae.",
     },
     {
       id: 3,
-      icon: <School fontSize="large" />,
       degree: "Matriculation with Computer Science",
       duration: "2015",
       institute: "The New School, Model Town, Lahore.",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deleniti in fuga adipisci saepe dolores libero maiores blanditiis, nisi aliquam rem quo ullam ratione doloremque repellendus sequi accusantium voluptates beatae.",
     },
   ],
 };
