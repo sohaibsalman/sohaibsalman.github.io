@@ -2,7 +2,15 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
-    padding: "20px 50px",
+    padding: "50px",
+  },
+  paper: {
+    padding: "15px 30px",
+  },
+  timeline: {
+    "*": {
+      flex: 0,
+    },
   },
 });
 

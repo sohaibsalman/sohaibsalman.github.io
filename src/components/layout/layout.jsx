@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import List from "@material-ui/core/List";
@@ -13,11 +12,8 @@ import { useTheme } from "@material-ui/core/styles";
 import UserInfo from "./userInfo";
 import MainContent from "./mainContent";
 
-import { brandName } from "../../styles/navbarStyle";
 import { getSidebarLinks } from "../../services/sidebarService";
 import { useStyles } from "../../styles/sidebarStyle";
-
-import "./layout.css";
 
 function ResponsiveDrawer(props) {
   const { window } = props;
@@ -34,12 +30,16 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <UserInfo />
-
-      <Divider />
       {/* Sidebar Liks */}
       <List>
         {links.map((item) => (
-          <ListItem key={item.id} button component={Link} to={item.url}>
+          <ListItem
+            key={item.id}
+            button
+            component={NavLink}
+            to={item.url}
+            activeClassName={classes.active}
+          >
             <ListItemText primary={item.title} />
           </ListItem>
         ))}

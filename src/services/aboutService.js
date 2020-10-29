@@ -1,3 +1,4 @@
+import { School } from "@material-ui/icons";
 import Picutre from "../static/images/about/user.jpg";
 
 const aboutHeader = {
@@ -7,7 +8,7 @@ const aboutHeader = {
     "I'm a software developer and a self learner, specialized in front-end and back-end development for large scale and complex web apps, along with a good knowledge of developing business level desktop apps.",
   column: {
     status: true,
-    size: 6,
+    size: 7,
   },
   image: Picutre,
   buttons: [
@@ -42,7 +43,7 @@ const whatIDo = {
         "Intermediate level understanding of React js for building Single Page Apps, along with some beginner-level understanding of Angular Framework.",
     },
     {
-      id: 2,
+      id: 3,
       icons: [
         "devicon-html5-plain colored",
         "devicon-css3-plain colored",
@@ -92,6 +93,35 @@ const whatIDo = {
   ],
 };
 
+const academicInfo = {
+  heading: "Education",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deleniti in fuga adipisci saepe dolores libero maiores blanditiis, nisi aliquam rem quo ullam ratione doloremque repellendus sequi accusantium voluptates beatae.",
+  education: [
+    {
+      id: 1,
+      icon: <School fontSize="large" />,
+      degree: "Bachelor of Science in Information Technology",
+      duration: "Current",
+      institute: "Punjab University College of Information Techology.",
+    },
+    {
+      id: 2,
+      icon: <School fontSize="large" />,
+      degree: "Intermediate in Computer Science",
+      duration: "2017",
+      institute: "Superior College of Information Technology.",
+    },
+    {
+      id: 3,
+      icon: <School fontSize="large" />,
+      degree: "Matriculation with Computer Science",
+      duration: "2015",
+      institute: "The New School, Model Town, Lahore.",
+    },
+  ],
+};
+
 export function getAboutHeader() {
   return aboutHeader;
 }
@@ -102,4 +132,8 @@ export function getWhatIDo() {
 
 export function getSkills() {
   return whatIDo.skills;
+}
+
+export function getAcademicInfo() {
+  return academicInfo;
 }

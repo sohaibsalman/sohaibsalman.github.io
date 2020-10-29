@@ -7,22 +7,22 @@ const socialIcons = [
   {
     id: 1,
     icon: <GitHub />,
-    url: "",
+    url: "https://github.com/sohaibsalman",
   },
   {
     id: 2,
     icon: <LinkedIn />,
-    url: "",
+    url: "https://www.linkedin.com/in/sohaibsalman/",
   },
   {
     id: 3,
     icon: <Instagram />,
-    url: "",
+    url: "https://www.instagram.com/sohaib.salman/",
   },
   {
     id: 4,
     icon: <Facebook />,
-    url: "",
+    url: "https://www.facebook.com/S0haibSalman",
   },
 ];
 
@@ -33,7 +33,12 @@ const SocialLinks = () => {
         {socialIcons.map((item) => {
           return (
             <Grid item>
-              <a href={item.url} key={item.id}>
+              <a
+                href={item.url}
+                key={item.id}
+                target="_blank"
+                style={{ color: "white" }}
+              >
                 {item.icon}
               </a>
             </Grid>

@@ -13,7 +13,7 @@ const UserInfo = () => {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <div className="userInfo">
+      <div className={classes.userInfo}>
         <center>
           <Typography variant="h5" className={classes.headingName}>
             {user.fullName}
@@ -26,6 +26,7 @@ const UserInfo = () => {
           {/* User Social Links */}
           <SocialLinks />
         </center>
+        <Divider style={{ marginTop: "15px" }} />
       </div>
     </React.Fragment>
   );

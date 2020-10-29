@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, Grid, Typography } from "@material-ui/core";
+import { Divider, Grid, Paper, Typography } from "@material-ui/core";
 
 import PageHeader from "../../common/pageHeader";
 import Heading from "../../common/heading";
@@ -8,9 +8,18 @@ import {
   getAboutHeader,
   getWhatIDo,
   getSkills,
+  getAcademicInfo,
 } from "../../../services/aboutService";
 
 import { useStyles } from "../../../styles/pageStyle";
+import {
+  Timeline,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot,
+  TimelineItem,
+  TimelineSeparator,
+} from "@material-ui/lab";
 
 const About = () => {
   const headerData = getAboutHeader();
@@ -32,6 +41,9 @@ const AboutBody = () => {
         <Heading heading={bodyData.heading} />
         <Typography>{bodyData.description}</Typography>
         <Skills />
+        <Divider style={{ margin: "40px 0" }} />
+        {/* Section 2 */}
+        <Education />
       </div>
     </React.Fragment>
   );
@@ -68,6 +80,39 @@ const Skills = () => {
         );
       })}
     </Grid>
+  );
+};
+
+const Education = () => {
+  const academic = getAcademicInfo();
+  const classes = useStyles();
+  return (
+    <React.Fragment>
+      <Heading heading={academic.heading} />
+      <Typography>{academic.description}</Typography>
+      <Timeline>
+        {academic.education.map((education) => {
+          return (
+            <TimelineItem style={{ flex: 0 }}>
+              <TimelineSeparator>
+                <TimelineDot />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent>
+                <Typography
+                  variant="h6"
+                  style={{ textTransform: "uppercase", fontWeight: "bold" }}
+                >
+                  {education.degree}
+                </Typography>
+                <Typography>{education.duration}</Typography>
+                <Typography>{education.institute}</Typography>
+              </TimelineContent>
+            </TimelineItem>
+          );
+        })}
+      </Timeline>
+    </React.Fragment>
   );
 };
 
