@@ -1,10 +1,30 @@
 import { Person } from "@material-ui/icons";
 
 const links = [
-  { id: 1, title: "About", url: "/about", icon: <Person /> },
-  // { id: 2, title: "Portfolio", url: "/portfolio" },
-  // { id: 3, title: "Services", url: "/services" },
-  // { id: 4, title: "Contact", url: "/contact" },
+  {
+    id: 1,
+    title: "About",
+    url: "/about",
+    icon: <box-icon name="user" color="white" />,
+  },
+  {
+    id: 2,
+    title: "Portfolio",
+    url: "/portfolio",
+    icon: <box-icon name="book-content" color="white" />,
+  },
+  {
+    id: 3,
+    title: "Services",
+    url: "/services",
+    icon: <box-icon name="server" color="white" />,
+  },
+  {
+    id: 4,
+    title: "Contact",
+    url: "/contact",
+    icon: <box-icon name="mail-send" color="white" />,
+  },
 ];
 
 const userInfo = {
