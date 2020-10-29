@@ -96,7 +96,7 @@ const whatIDo = {
 const academicInfo = {
   heading: "Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deleniti in fuga adipisci saepe dolores libero maiores blanditiis, nisi aliquam rem quo ullam ratione doloremque repellendus sequi accusantium voluptates beatae.",
+    "From childhood, I was interested in Computer Science and Information Technology and currently, I am pursuing a degree in Information Technology from Pakistan. Here is my educational background!",
   education: [
     {
       id: 1,
@@ -104,7 +104,7 @@ const academicInfo = {
       duration: "Current",
       institute: "Punjab University College of Information Techology.",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deleniti in fuga adipisci saepe dolores libero maiores blanditiis, nisi aliquam rem quo ullam ratione doloremque repellendus sequi accusantium voluptates beatae.",
+        "Continuing to learn and explore my field of interest from one of the most reputable and oldest institute in Pakistan. PUCIT is the most famous and competitive department of Punjab University and I am lucky to be a part of it!",
     },
     {
       id: 2,
@@ -112,15 +112,15 @@ const academicInfo = {
       duration: "2017",
       institute: "Superior College of Information Technology.",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deleniti in fuga adipisci saepe dolores libero maiores blanditiis, nisi aliquam rem quo ullam ratione doloremque repellendus sequi accusantium voluptates beatae.",
+        "After matric, joined Superior College for my intermediate and took admission in ICS. From there, I learned my first programming language C, along with some basic concepts of Databases.",
     },
     {
       id: 3,
-      degree: "Matriculation with Computer Science",
+      degree: "Matriculation (Computer Science)",
       duration: "2015",
       institute: "The New School, Model Town, Lahore.",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, deleniti in fuga adipisci saepe dolores libero maiores blanditiis, nisi aliquam rem quo ullam ratione doloremque repellendus sequi accusantium voluptates beatae.",
+        "Completed my matriculation in the subjects of computer science from The New School located in Model Town Lahore. There I learned basics of computer science and not to forget THE GW BASIC.",
     },
   ],
 };

@@ -20,7 +20,7 @@ const Timeline = ({ heading, date, subHeading, description }) => {
         {subHeading}
       </Typography>
       {/* Description */}
-      <Typography style={{ margin: "15px 0" }}>{description}</Typography>
+      <Typography style={{ margin: "12px 0" }}>{description}</Typography>
     </div>
   );
 };
