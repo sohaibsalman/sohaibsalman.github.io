@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "lighter",
   },
   description: {
-    padding: "0 100px",
     margin: "20px 0",
   },
   buttons: {

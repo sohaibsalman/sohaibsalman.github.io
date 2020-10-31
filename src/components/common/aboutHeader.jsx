@@ -39,7 +39,11 @@ const HeaderButtons = ({ buttons }) => {
     <div className={classes.buttons}>
       {buttons.map((button) => {
         return (
-          <Button variant="contained" color={button.id === 1 ? "primary" : ""}>
+          <Button
+            key={button.id}
+            variant="contained"
+            color={button.id === 1 ? "primary" : "default"}
+          >
             {button.text}
           </Button>
         );

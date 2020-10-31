@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../common/header";
+import Header from "../../common/page/header";
 import { getServicesHeader } from "./../../../services/servicesService";
 
 const Service = () => {

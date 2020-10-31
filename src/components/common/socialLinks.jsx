@@ -32,13 +32,8 @@ const SocialLinks = () => {
       <Grid container justify="center" spacing={1}>
         {socialIcons.map((item) => {
           return (
-            <Grid item>
-              <a
-                href={item.url}
-                key={item.id}
-                target="_blank"
-                style={{ color: "white" }}
-              >
+            <Grid item key={item.id}>
+              <a href={item.url} target="_blank" style={{ color: "white" }}>
                 {item.icon}
               </a>
             </Grid>

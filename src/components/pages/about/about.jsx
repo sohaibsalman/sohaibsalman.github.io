@@ -50,9 +50,10 @@ const Skills = () => {
       {skills.map((skill) => {
         return (
           <Grid item md={3} sm={6} key={skill.id}>
-            {skill.icons.map((icon) => {
+            {skill.icons.map((icon, index) => {
               return (
                 <i
+                  key={index}
                   className={icon}
                   style={{ fontSize: "35px", marginRight: "10px" }}
                 />

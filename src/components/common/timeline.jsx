@@ -5,7 +5,7 @@ import "./timeline.css";
 
 const Timeline = ({ heading, date, subHeading, description }) => {
   return (
-    <div class="timeline-item">
+    <div className="timeline-item">
       {/* Heading */}
       <Typography
         variant="h6"
