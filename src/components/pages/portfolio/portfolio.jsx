@@ -25,7 +25,15 @@ class Portfolio extends Component {
     const { projects } = this.state;
 
     const handleButtonClick = (selectedButton) => {
-      this.setState({ selectedButton });
+      if (selectedButton !== this.state.selectedButton) {
+        let projects = getProjects();
+        if (selectedButton != 0) {
+          projects = projects.filter((p) => {
+            return p.type.find((f) => f === selectedButton);
+          });
+        }
+        this.setState({ selectedButton, projects });
+      }
     };
 
     return (

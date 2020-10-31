@@ -11,6 +11,16 @@ import WebFixit from "../static/images/portfolio/web/fixit.png";
 import WebPortfolio from "../static/images/portfolio/web/porfolio-dark.png";
 import WebLMS from "../static/images/portfolio/web/shaheen-library.png";
 
+const types = Object.freeze({
+  all: 0,
+  ui: 1,
+  frontend: 2,
+  backend: 3,
+  web: 4,
+  desktop: 5,
+  mobile: 6,
+});
+
 const portfolioHeader = {
   heading: "Portfolio",
   description: [
@@ -38,7 +48,7 @@ const projects = [
     title: "Desktop Tailor System",
     image: DesktopTMS,
     description: "",
-    type: ["desktop-app", "backend"],
+    type: [types.desktop, types.backend],
     tools: "Win Forms, .NET, ADO.NET, C#, SQL Server",
   },
   {
@@ -46,7 +56,7 @@ const projects = [
     title: "Online Tailor System",
     image: WebTMS,
     description: "",
-    type: ["web-app", "frontend", "backend"],
+    type: [types.web, types.frontend, types.backend],
     tools: "Web Forms, ASP.NET, ADO.NET, C#, SQL Server",
   },
   {
@@ -54,7 +64,7 @@ const projects = [
     title: "Fast Food UI",
     image: DesignFood,
     description: "",
-    type: ["ui-design"],
+    type: [types.ui],
     tools: "Adobe Xd, Figma",
   },
   {
@@ -62,7 +72,7 @@ const projects = [
     title: "Photographer UI",
     image: DesignPhotography,
     description: "",
-    type: ["ui-design"],
+    type: [types.ui],
     tools: "Adobe Xd, Figma",
   },
   {
@@ -70,7 +80,7 @@ const projects = [
     title: "Calculator",
     image: DesktopCalculator,
     description: "",
-    type: ["desktop-app"],
+    type: [types.desktop],
     tools: "Java Swing, Java",
   },
   {
@@ -78,7 +88,7 @@ const projects = [
     title: "Chat Application",
     image: DesktopChat,
     description: "",
-    type: ["desktop-app", "backend"],
+    type: [types.desktop, types.backend],
     tools: "Java Swing, Java Sockets, Java, MySQL",
   },
   {
@@ -86,7 +96,7 @@ const projects = [
     title: "Fixit Website",
     image: WebFixit,
     description: "",
-    type: ["frontend", "ui-design"],
+    type: [types.frontend, types.ui],
     tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
   },
   {
@@ -94,7 +104,7 @@ const projects = [
     title: "Foodie Website",
     image: WebFoodie,
     description: "",
-    type: ["frontend", "ui-design"],
+    type: [types.frontend, types.ui],
     tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
   },
   {
@@ -102,7 +112,7 @@ const projects = [
     title: "Personal Portfolio",
     image: WebPortfolio,
     description: "",
-    type: ["frontend", "ui-design"],
+    type: [types.frontend, types.ui],
     tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
   },
   {
@@ -110,7 +120,7 @@ const projects = [
     title: "Online Library System",
     image: WebLMS,
     description: "",
-    type: ["web-app", "frontend", "backend"],
+    type: [types.web, types.frontend, types.backend],
     tools: "HTML, CSS, JavaScript, PHP, MySQL",
   },
 ];
