@@ -1,26 +1,36 @@
 {
   "files": {
     "main.css": "/static/css/main.a2c16d37.chunk.css",
-    "main.js": "/static/js/main.4800985b.chunk.js",
-    "main.js.map": "/static/js/main.4800985b.chunk.js.map",
+    "main.js": "/static/js/main.dfdb035d.chunk.js",
+    "main.js.map": "/static/js/main.dfdb035d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.291a5225.js",
     "runtime-main.js.map": "/static/js/runtime-main.291a5225.js.map",
     "static/css/2.1937ac5f.chunk.css": "/static/css/2.1937ac5f.chunk.css",
-    "static/js/2.0c7adeb7.chunk.js": "/static/js/2.0c7adeb7.chunk.js",
-    "static/js/2.0c7adeb7.chunk.js.map": "/static/js/2.0c7adeb7.chunk.js.map",
+    "static/js/2.f37b00c3.chunk.js": "/static/js/2.f37b00c3.chunk.js",
+    "static/js/2.f37b00c3.chunk.js.map": "/static/js/2.f37b00c3.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.1937ac5f.chunk.css.map": "/static/css/2.1937ac5f.chunk.css.map",
     "static/css/main.a2c16d37.chunk.css.map": "/static/css/main.a2c16d37.chunk.css.map",
-    "static/js/2.0c7adeb7.chunk.js.LICENSE.txt": "/static/js/2.0c7adeb7.chunk.js.LICENSE.txt",
+    "static/js/2.f37b00c3.chunk.js.LICENSE.txt": "/static/js/2.f37b00c3.chunk.js.LICENSE.txt",
+    "static/media/calculator.c7f97d6e.PNG": "/static/media/calculator.c7f97d6e.PNG",
+    "static/media/chat-app.15a07e1c.png": "/static/media/chat-app.15a07e1c.png",
     "static/media/devicon.min.css": "/static/media/devicon.da3914c3.ttf",
+    "static/media/fast-food.aeb22e48.png": "/static/media/fast-food.aeb22e48.png",
+    "static/media/fixit.ac97e7d3.png": "/static/media/fixit.ac97e7d3.png",
+    "static/media/foodie.17718a5e.png": "/static/media/foodie.17718a5e.png",
+    "static/media/photography.95505baa.png": "/static/media/photography.95505baa.png",
+    "static/media/porfolio-dark.eb2c3f33.png": "/static/media/porfolio-dark.eb2c3f33.png",
+    "static/media/shaheen-library.8a227a56.png": "/static/media/shaheen-library.8a227a56.png",
     "static/media/sohaib.7add8e86.jpg": "/static/media/sohaib.7add8e86.jpg",
+    "static/media/tms.8338c41f.png": "/static/media/tms.8338c41f.png",
+    "static/media/tms.865e16fe.PNG": "/static/media/tms.865e16fe.PNG",
     "static/media/user.2d3f6386.jpg": "/static/media/user.2d3f6386.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.291a5225.js",
     "static/css/2.1937ac5f.chunk.css",
-    "static/js/2.0c7adeb7.chunk.js",
+    "static/js/2.f37b00c3.chunk.js",
     "static/css/main.a2c16d37.chunk.css",
-    "static/js/main.4800985b.chunk.js"
+    "static/js/main.dfdb035d.chunk.js"
   ]
 }
