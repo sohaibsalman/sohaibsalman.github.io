@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: theme.spacing(5),
+    },
   },
 }));
 

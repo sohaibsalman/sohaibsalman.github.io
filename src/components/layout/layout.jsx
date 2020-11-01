@@ -14,7 +14,13 @@ import MainContent from "./mainContent";
 
 import { getSidebarLinks } from "../../services/sidebarService";
 import { useStyles } from "../../styles/sidebarStyle";
-import { ListItemIcon } from "@material-ui/core";
+import {
+  IconButton,
+  ListItemIcon,
+  Toolbar,
+  Typography,
+} from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
 
 function ResponsiveDrawer(props) {
   const { window } = props;
@@ -55,7 +61,11 @@ function ResponsiveDrawer(props) {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      {/* <AppBar position="fixed" className={classes.appBar}>
+      <AppBar
+        position="fixed"
+        className={classes.appBar}
+        style={{ backgroundColor: "#424242" }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -66,10 +76,10 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            {brandName}
+            {/* {brandName} */}
           </Typography>
         </Toolbar>
-      </AppBar> */}
+      </AppBar>
       <nav className={classes.drawer}>
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">

@@ -14,15 +14,17 @@ const Footer = () => {
   return (
     <React.Fragment>
       <div className={classes.footer}>
-        <Typography variant="p" color="textSecondary">
+        <Typography variant="body2" color="textSecondary">
           This portfolio is developed by{" "}
-          <span style={{ color: "white" }}> Sohaib Salman </span> using React js
-          and Material UI.
+          <span style={{ color: "white", textDecoration: "underline" }}>
+            Sohaib Salman
+          </span>{" "}
+          using React js and Material UI.
         </Typography>
         <br />
         <Typography
-          variant="p"
-          style={{ margin: "10px 0", display: "block" }}
+          variant="body2"
+          style={{ display: "block" }}
           color="textSecondary"
         >
           All rights reserved &copy; {new Date().getFullYear()}
