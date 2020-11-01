@@ -7,6 +7,8 @@ import Portfolio from "../pages/portfolio/portfolio";
 import Services from "../pages/services/services";
 import Contact from "../pages/contact/contact";
 
+import Footer from "./../common/page/footer";
+
 import { useStyles } from "../../styles/mainContentStyle";
 
 const MainContent = () => {
@@ -22,6 +24,7 @@ const MainContent = () => {
         <Route path="/about" component={About} />
         <Redirect from="/" to="/about" />
       </Switch>
+      <Footer />
     </main>
   );
 };

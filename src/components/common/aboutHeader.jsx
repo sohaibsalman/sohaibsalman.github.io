@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Divider, Grid, Typography } from "@material-ui/core";
 
 import { useStyles } from "../../styles/headerStyle";
+import { Link } from "react-router-dom";
 
 const AboutHeader = ({ headerData }) => {
   const classes = useStyles();
@@ -42,6 +43,8 @@ const HeaderButtons = ({ buttons }) => {
           <Button
             key={button.id}
             variant="contained"
+            component={Link}
+            to={button.to}
             color={button.id === 1 ? "primary" : "default"}
           >
             {button.text}

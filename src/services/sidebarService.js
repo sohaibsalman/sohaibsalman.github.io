@@ -1,5 +1,3 @@
-import { Person } from "@material-ui/icons";
-
 const links = [
   {
     id: 1,

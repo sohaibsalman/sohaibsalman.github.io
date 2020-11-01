@@ -4,7 +4,7 @@ const contactHeader = {
     {
       id: 1,
       text:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis maiores quod doloribus similique minima, amet minus, inventore id facere, quaerat officia doloremque quo tempore. Voluptatibus architecto vel dolorem quasi eius.",
+        "Interested and want to work with me or just want to discuss your requirements? You can fill the form below or can visit my fiverr profile to place an order.",
     },
   ],
 };

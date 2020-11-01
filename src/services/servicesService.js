@@ -4,7 +4,7 @@ const servicesHeader = {
     {
       id: 1,
       text:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis maiores quod doloribus similique minima, amet minus, inventore id facere, quaerat officia doloremque quo tempore. Voluptatibus architecto vel dolorem quasi eius.",
+        "I have 2+ years of experience in developing web and desktop apps. Take a look at my project portfolio to find more about my skills and expertise. ",
     },
   ],
 };

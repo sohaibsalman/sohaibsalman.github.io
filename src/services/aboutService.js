@@ -12,7 +12,7 @@ const aboutHeader = {
   },
   image: Picutre,
   buttons: [
-    { id: 1, text: "View Portfolio" },
+    { id: 1, text: "View Portfolio", to: "/portfolio" },
     { id: 2, text: "View Resume" },
   ],
 };

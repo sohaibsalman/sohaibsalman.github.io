@@ -1,15 +1,17 @@
 import DesignFood from "../static/images/portfolio/design/fast-food.png";
 import DesignPhotography from "../static/images/portfolio/design/photography.png";
 
-import DesktopTMS from "../static/images/portfolio/desktop/tms.PNG";
+import DesktopTMS from "../static/images/portfolio/desktop/tms.png";
 import DesktopChat from "../static/images/portfolio/desktop/chat-app.png";
-import DesktopCalculator from "../static/images/portfolio/desktop/calculator.PNG";
+import DesktopCalculator from "../static/images/portfolio/desktop/calculator.png";
+import DesktopTraveling from "../static/images/portfolio/desktop/traveling.png";
 
 import WebTMS from "../static/images/portfolio/web/tms.png";
 import WebFoodie from "../static/images/portfolio/web/foodie.png";
 import WebFixit from "../static/images/portfolio/web/fixit.png";
 import WebPortfolio from "../static/images/portfolio/web/porfolio-dark.png";
 import WebLMS from "../static/images/portfolio/web/shaheen-library.png";
+import WebCodeWork from "../static/images/portfolio/web/codework.png";
 
 const types = Object.freeze({
   all: 0,
@@ -60,12 +62,28 @@ const projects = [
     tools: "Web Forms, ASP.NET, ADO.NET, C#, SQL Server",
   },
   {
+    id: 11,
+    title: "CodeWork.pk",
+    image: WebCodeWork,
+    description: "",
+    type: [types.web, types.frontend, types.backend],
+    tools: "Web Forms, ASP.NET, ADO.NET, C#, SQL Server",
+  },
+  {
     id: 3,
     title: "Fast Food UI",
     image: DesignFood,
     description: "",
     type: [types.ui],
     tools: "Adobe Xd, Figma",
+  },
+  {
+    id: 12,
+    title: "Traveling System",
+    image: DesktopTraveling,
+    description: "",
+    type: [types.desktop, types.backend],
+    tools: "Win Forms, .NET, ADO.NET, C#, SQL Server",
   },
   {
     id: 4,
