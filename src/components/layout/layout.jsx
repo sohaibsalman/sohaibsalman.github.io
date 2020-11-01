@@ -25,7 +25,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 function ResponsiveDrawer(props) {
   const { window } = props;
   const classes = useStyles();
-  const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -86,7 +85,7 @@ function ResponsiveDrawer(props) {
           <Drawer
             container={container}
             variant="temporary"
-            anchor={theme.direction === "rtl" ? "right" : "left"}
+            anchor="left"
             open={mobileOpen}
             onClose={handleDrawerToggle}
             classes={{

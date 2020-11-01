@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
     "& > *": {
       margin: theme.spacing(0.5),
     },
+    [theme.breakpoints.down("sm")]: {
+      justifyContent: "flex-start",
+    },
   },
 }));
 
