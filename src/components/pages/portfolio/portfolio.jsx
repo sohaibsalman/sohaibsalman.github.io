@@ -27,7 +27,7 @@ class Portfolio extends Component {
     const handleButtonClick = (selectedButton) => {
       if (selectedButton !== this.state.selectedButton) {
         let projects = getProjects();
-        if (selectedButton != 0) {
+        if (selectedButton !== 0) {
           projects = projects.filter((p) => {
             return p.type.find((f) => f === selectedButton);
           });
@@ -52,7 +52,7 @@ class Portfolio extends Component {
           <Grid container spacing={3}>
             {projects.map((project) => {
               return (
-                <Grid item md={6}>
+                <Grid item md={6} key={project.id}>
                   <SideImageCard
                     heading={project.title}
                     image={project.image}
