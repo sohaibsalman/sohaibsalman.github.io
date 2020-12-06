@@ -45,10 +45,6 @@ const SideImageCard = ({ image, heading, description, footer }) => {
               </Typography>
               <Typography className={classes.description} color="textSecondary">
                 {description}
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
-                eos vel veritatis officiis ea earum, unde odit rem mollitia,
-                quisquam sunt at dolorum ad repudiandae quod? Nisi dignissimos
-                quaerat autem!
               </Typography>
               <Typography className="">{footer}</Typography>
             </div>

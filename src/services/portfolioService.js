@@ -52,6 +52,8 @@ const projects = [
     description: "",
     type: [types.desktop, types.backend],
     tools: "Win Forms, .NET, ADO.NET, C#, SQL Server",
+    description:
+      "A desktop applications for clothing brand to automate their tiresome manual tasks. Developed in .NET, C# using Windows Forms.",
   },
   {
     id: 2,
@@ -60,6 +62,8 @@ const projects = [
     description: "",
     type: [types.web, types.frontend, types.backend],
     tools: "Web Forms, ASP.NET, ADO.NET, C#, SQL Server",
+    description:
+      "Web based applications for clothing brand to automate their tasks and centralize their data. Developed in ASP.NET, C# using Web Forms.",
   },
   {
     id: 11,
@@ -67,7 +71,9 @@ const projects = [
     image: WebCodeWork,
     description: "",
     type: [types.web, types.frontend, types.backend],
-    tools: "Web Forms, ASP.NET, ADO.NET, C#, SQL Server",
+    tools: ".NET Core, Web API, ReactJs",
+    description:
+      "Developing a platform for programming students to enhance their skills by working directly with software companies.",
   },
   {
     id: 3,
@@ -76,6 +82,8 @@ const projects = [
     description: "",
     type: [types.ui],
     tools: "Adobe Xd, Figma",
+    description:
+      "UI Design for a fast food company landing page. This landing page is designed in Adobe Xd and Figma.",
   },
   {
     id: 12,
@@ -84,38 +92,8 @@ const projects = [
     description: "",
     type: [types.desktop, types.backend],
     tools: "Win Forms, .NET, ADO.NET, C#, SQL Server",
-  },
-  {
-    id: 4,
-    title: "Photographer UI",
-    image: DesignPhotography,
-    description: "",
-    type: [types.ui],
-    tools: "Adobe Xd, Figma",
-  },
-  {
-    id: 5,
-    title: "Calculator",
-    image: DesktopCalculator,
-    description: "",
-    type: [types.desktop],
-    tools: "Java Swing, Java",
-  },
-  {
-    id: 6,
-    title: "Chat Application",
-    image: DesktopChat,
-    description: "",
-    type: [types.desktop, types.backend],
-    tools: "Java Swing, Java Sockets, Java, MySQL",
-  },
-  {
-    id: 7,
-    title: "Fixit Website",
-    image: WebFixit,
-    description: "",
-    type: [types.frontend, types.ui],
-    tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
+    description:
+      "A traveling platform for traveling agents and companies to organize and automate their tasks like booking, records, etc.",
   },
   {
     id: 8,
@@ -124,7 +102,50 @@ const projects = [
     description: "",
     type: [types.frontend, types.ui],
     tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
+    description:
+      "A beautifull website design for Food Restaurants for the publicity of their business, containing all the info of the dishes and contact!",
   },
+  {
+    id: 5,
+    title: "Calculator",
+    image: DesktopCalculator,
+    description: "",
+    type: [types.desktop],
+    tools: "Java Swing, Java",
+    description:
+      "A GUI based calculator develeped in Java, Java Swings. This calculator has the features of a simple calculator including storing results in memory.",
+  },
+  {
+    id: 4,
+    title: "Photographer UI",
+    image: DesignPhotography,
+    description: "",
+    type: [types.ui],
+    tools: "Adobe Xd, Figma",
+    description:
+      "UI Design for a photographer's website landing page. This landing page is designed in Adobe Xd and Figma.",
+  },
+  {
+    id: 6,
+    title: "Chat Application",
+    image: DesktopChat,
+    description: "",
+    type: [types.desktop, types.backend],
+    tools: "Java Swing, Java Sockets, Java, MySQL",
+    description:
+      "A chat application developed in Java, using Java Swing and Socket Programming. It has all the features like adding friend, sending messages!",
+  },
+  {
+    id: 7,
+    title: "Fixit Website",
+    image: WebFixit,
+    description: "",
+    type: [types.frontend, types.ui],
+    tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
+    description:
+      "A website designed and developed for a service provider based startup. Developed in HTML, CSS/SCSS, Bootstrap, JavaScript and jQyery.",
+  },
+
   {
     id: 9,
     title: "Personal Portfolio",
@@ -132,6 +153,8 @@ const projects = [
     description: "",
     type: [types.frontend, types.ui],
     tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
+    description:
+      "My personal portfolio website, designed and developed in HTML, CSS/SCSS, Bootstrap and JavaScript.",
   },
   {
     id: 10,
@@ -140,6 +163,8 @@ const projects = [
     description: "",
     type: [types.web, types.frontend, types.backend],
     tools: "HTML, CSS, JavaScript, PHP, MySQL",
+    description:
+      "An online library management system to manage all library tasks. Developed in PHP, HTML and simple CSS.",
   },
 ];
 
