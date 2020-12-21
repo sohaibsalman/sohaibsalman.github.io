@@ -15,7 +15,7 @@ const links = [
     id: 5,
     title: "Resume",
     url: "/resume",
-    icon: <box-icon name="mail-send" color="white" />,
+    icon: <box-icon name="file-doc" color="white" type="solid" />,
   },
   {
     id: 3,

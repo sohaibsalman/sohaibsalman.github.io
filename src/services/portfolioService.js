@@ -49,7 +49,6 @@ const projects = [
     id: 1,
     title: "Desktop Tailor System",
     image: DesktopTMS,
-    description: "",
     type: [types.desktop, types.backend],
     tools: "Win Forms, .NET, ADO.NET, C#, SQL Server",
     description:
@@ -59,7 +58,6 @@ const projects = [
     id: 2,
     title: "Online Tailor System",
     image: WebTMS,
-    description: "",
     type: [types.web, types.frontend, types.backend],
     tools: "Web Forms, ASP.NET, ADO.NET, C#, SQL Server",
     description:
@@ -69,7 +67,6 @@ const projects = [
     id: 11,
     title: "CodeWork.pk",
     image: WebCodeWork,
-    description: "",
     type: [types.web, types.frontend, types.backend],
     tools: ".NET Core, Web API, ReactJs",
     description:
@@ -79,7 +76,6 @@ const projects = [
     id: 3,
     title: "Fast Food UI",
     image: DesignFood,
-    description: "",
     type: [types.ui],
     tools: "Adobe Xd, Figma",
     description:
@@ -89,7 +85,6 @@ const projects = [
     id: 12,
     title: "Traveling System",
     image: DesktopTraveling,
-    description: "",
     type: [types.desktop, types.backend],
     tools: "Win Forms, .NET, ADO.NET, C#, SQL Server",
     description:
@@ -99,7 +94,6 @@ const projects = [
     id: 8,
     title: "Foodie Website",
     image: WebFoodie,
-    description: "",
     type: [types.frontend, types.ui],
     tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
     description:
@@ -109,7 +103,6 @@ const projects = [
     id: 5,
     title: "Calculator",
     image: DesktopCalculator,
-    description: "",
     type: [types.desktop],
     tools: "Java Swing, Java",
     description:
@@ -119,7 +112,6 @@ const projects = [
     id: 4,
     title: "Photographer UI",
     image: DesignPhotography,
-    description: "",
     type: [types.ui],
     tools: "Adobe Xd, Figma",
     description:
@@ -129,7 +121,6 @@ const projects = [
     id: 6,
     title: "Chat Application",
     image: DesktopChat,
-    description: "",
     type: [types.desktop, types.backend],
     tools: "Java Swing, Java Sockets, Java, MySQL",
     description:
@@ -139,7 +130,6 @@ const projects = [
     id: 7,
     title: "Fixit Website",
     image: WebFixit,
-    description: "",
     type: [types.frontend, types.ui],
     tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
     description:
@@ -150,7 +140,6 @@ const projects = [
     id: 9,
     title: "Personal Portfolio",
     image: WebPortfolio,
-    description: "",
     type: [types.frontend, types.ui],
     tools: "HTML, CSS/SASS, Bootstrap, JavaScript, jQuery",
     description:
@@ -160,7 +149,6 @@ const projects = [
     id: 10,
     title: "Online Library System",
     image: WebLMS,
-    description: "",
     type: [types.web, types.frontend, types.backend],
     tools: "HTML, CSS, JavaScript, PHP, MySQL",
     description:

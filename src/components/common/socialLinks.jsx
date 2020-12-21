@@ -30,10 +30,15 @@ const SocialLinks = () => {
   return (
     <React.Fragment>
       <Grid container justify="center" spacing={1}>
-        {socialIcons.map((item) => {
+        {socialIcons.map((item, index) => {
           return (
-            <Grid item key={item.id}>
-              <a href={item.url} target="_blank" style={{ color: "white" }}>
+            <Grid item key={index}>
+              <a
+                href={item.url}
+                target="_blank"
+                style={{ color: "white" }}
+                rel="noreferrer"
+              >
                 {item.icon}
               </a>
             </Grid>

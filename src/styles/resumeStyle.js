@@ -11,7 +11,17 @@ const useStyles = makeStyles({
     letterSpacing: "3px",
   },
   divider: {
-    margin: "15px 0",
+    margin: "20px 0",
+  },
+  ul: {
+    listStyle: "none",
+    padding: "0",
+  },
+  li: {
+    marginBottom: "5px",
+  },
+  center: {
+    display: "inline-block",
   },
 });
 
