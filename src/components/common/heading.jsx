@@ -14,11 +14,15 @@ const useStyles = makeStyles({
   },
 });
 
-const Heading = ({ heading }) => {
+const Heading = ({ heading, size, uppercase }) => {
   const classes = useStyles();
+  const variant = size ? size : "h4";
+  const style = uppercase
+    ? { textTransform: "uppercase", letterSpacing: "3px" }
+    : {};
   return (
     <div className={classes.headingDiv}>
-      <Typography variant="h4" className={classes.heading}>
+      <Typography variant={variant} className={classes.heading} style={style}>
         {heading}
       </Typography>
     </div>

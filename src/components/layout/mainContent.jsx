@@ -9,6 +9,7 @@ import Contact from "../pages/contact/contact";
 import Footer from "./../common/page/footer";
 
 import { useStyles } from "../../styles/mainContentStyle";
+import Resume from "../pages/resume/Resume";
 // import NotFound from "./../pages/error/notFound";
 
 const MainContent = () => {
@@ -19,6 +20,7 @@ const MainContent = () => {
       <Switch>
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/services" component={Services} />
+        <Route path="/resume" component={Resume} />
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
         <Redirect from="/" to="/about" />

@@ -20,16 +20,23 @@ const Header = ({ heading, description }) => {
             {heading}
           </Typography>
           {/* Description */}
-          <div className={classes.description}>
-            {description.map((item) => {
-              return <Typography key={item.id}>{item.text}</Typography>;
-            })}
-          </div>
+          {description && <Description description={description} />}
         </Grid>
         <Grid item md={1}></Grid>
       </Grid>
       <Divider />
     </React.Fragment>
+  );
+};
+
+const Description = ({ description }) => {
+  const classes = useStyles();
+  return (
+    <div className={classes.description}>
+      {description.map((item) => {
+        return <Typography key={item.id}>{item.text}</Typography>;
+      })}
+    </div>
   );
 };
 

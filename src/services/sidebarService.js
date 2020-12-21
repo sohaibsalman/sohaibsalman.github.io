@@ -12,6 +12,12 @@ const links = [
     icon: <box-icon name="book-content" color="white" />,
   },
   {
+    id: 5,
+    title: "Resume",
+    url: "/resume",
+    icon: <box-icon name="mail-send" color="white" />,
+  },
+  {
     id: 3,
     title: "Services",
     url: "/services",
