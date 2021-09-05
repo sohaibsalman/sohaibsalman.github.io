@@ -1,7 +1,13 @@
-import "./App.css";
+import React from "react";
 
-function App() {
-    return <h1>Hello World</h1>;
-}
+import Home from "./pages/home/Home";
+
+const App = () => {
+    return (
+        <React.Fragment>
+            <Home />
+        </React.Fragment>
+    );
+};
 
 export default App;
