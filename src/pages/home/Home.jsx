@@ -1,12 +1,18 @@
 import React from "react";
 
-import Navbar from "../../components/navbar/Navbar";
-
 const Home = () => {
+    return <React.Fragment>{/* <HomeMain /> */}</React.Fragment>;
+};
+
+const HomeMain = () => {
     return (
-        <React.Fragment>
-            <Navbar />
-        </React.Fragment>
+        <div className="home-main">
+            <div className="home-main-headings">
+                <h5>Hi</h5>
+                <h1>Sohaib</h1>
+                <h1>Salman</h1>
+            </div>
+        </div>
     );
 };
 

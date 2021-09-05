@@ -1,0 +1,29 @@
+.social-item--email {
+    position: fixed;
+    bottom: 0;
+    right: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-item--email a {
+    color: white;
+    text-decoration: none;
+    transform: rotate(90deg);
+    display: block;
+    position: relative;
+    top: -100px;
+    transition: all 0.3s;
+}
+
+.social-item--email a:hover {
+    color: var(--primary);
+}
+
+.line-div {
+    height: 110px;
+    width: 1px;
+    background: white;
+    display: inline-block;
+}
