@@ -1,15 +1,15 @@
 import React from "react";
 
-import Navbar from "./components/navbar/Navbar";
-import Email from "./components/social-items/Email";
 import Home from "./pages/home/Home";
+import Navbar from "./components/navbar/Navbar";
+import SocialItems from "./components/social-items/SocialItems";
 
 const App = () => {
     return (
         <React.Fragment>
             <Navbar />
             <Home />
-            <Email emailAddress="sohaib.it40@gmail.com" />
+            <SocialItems />
         </React.Fragment>
     );
 };

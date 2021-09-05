@@ -4,7 +4,7 @@ import "./social-items.css";
 
 const Email = ({ emailAddress }) => {
     return (
-        <div className="social-item--email">
+        <div className="social-item social-item--email">
             <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
             <div className="line-div" />
         </div>
