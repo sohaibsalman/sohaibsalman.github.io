@@ -1,14 +1,13 @@
 import React from "react";
 
-import Email from "./Email";
 import SocialLinks from "./SocialLinks";
+import "./social-items.css";
 
 const SocialItems = () => {
     return (
-        <React.Fragment>
-            <Email emailAddress="sohaib.it40@gmail.com" />
+        <div className="social-items-main">
             <SocialLinks />
-        </React.Fragment>
+        </div>
     );
 };
 

@@ -47,9 +47,7 @@ const Navbar = () => {
             <div className="navbar-container">
                 <div className="navbar-brand">
                     <a href="#" className="navbar-brand-text">
-                        <h3>
-                            <span>dev</span>Sohaib
-                        </h3>
+                        <span>dev</span>Sohaib
                     </a>
                 </div>
                 <div className="navbar-toggler" id="navbar-toggle" onClick={handleNavbarToggle}>

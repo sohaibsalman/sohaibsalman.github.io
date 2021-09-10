@@ -1,0 +1,51 @@
+.home-main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.home-main-heading {
+    font-size: 80px;
+}
+
+.home-sub-heading {
+    font-size: 20px;
+}
+
+.home-designation {
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.home-description {
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--light-slate);
+}
+
+@media (max-width: 575px) {
+    .home-main {
+        padding: 150px 0;
+        display: block;
+    }
+    .home-main-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .home-main {
+        padding: 150px 0;
+        display: block;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .home-main {
+        padding: 150px 0;
+        display: block;
+    }
+}

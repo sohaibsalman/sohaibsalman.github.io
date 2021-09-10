@@ -16,11 +16,16 @@
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+a:hover {
+    color: inherit;
 }
 
 body {
@@ -29,10 +34,30 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--secondary-dark);
+    background-color: var(--secondary-dark) !important;
     color: white;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.main {
+    padding: 0 200px;
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+@media (max-width: 575px) {
+    .main {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .main {
+        padding: 0 60px;
+    }
 }

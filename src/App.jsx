@@ -1,14 +1,14 @@
 import React from "react";
 
-import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import SocialItems from "./components/social-items/SocialItems";
+import Pages from "./pages/Pages";
 
 const App = () => {
     return (
         <React.Fragment>
             <Navbar />
-            <Home />
+            <Pages />
             <SocialItems />
         </React.Fragment>
     );
