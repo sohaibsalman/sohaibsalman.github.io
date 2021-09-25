@@ -31,7 +31,7 @@
 }
 
 .line-div {
-    height: 110px;
+    height: 60px;
     width: 1px;
     background: var(--light-slate);
     display: inline-block;

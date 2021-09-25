@@ -50,6 +50,11 @@ code {
     color: var(--primary);
 }
 
+p {
+    font-size: 20px;
+    color: var(--light-slate);
+}
+
 @media (max-width: 575px) {
     .main {
         padding: 0 30px;
