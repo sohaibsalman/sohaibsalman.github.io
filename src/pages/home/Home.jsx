@@ -2,6 +2,7 @@ import React from "react";
 import Lottie from "react-lottie";
 import Paper from "../../components/paper/Paper";
 import Icons from "../../components/icons/devIcons";
+import TimeLine from "../../components/common/timeline/Timeline";
 
 import lottieAnimation from "../../lottie/coder.json";
 import "./home.css";
@@ -20,6 +21,7 @@ const Home = () => {
         <React.Fragment>
             <MainSection />
             <AboutSection />
+            <EducationSection />
         </React.Fragment>
     );
 };
@@ -55,6 +57,40 @@ const MainSection = () => {
 };
 
 const AboutSection = () => {
+    const technologies = [
+        {
+            title: "JavaScript, Typescript and jQuery",
+            icon: [Icons.js, Icons.ts, Icons.jquery],
+        },
+        {
+            title: "React JS and Angular",
+            icon: [Icons.react, Icons.angular],
+        },
+        {
+            title: "HTML, CSS, Bootstrap, MaterialUI",
+            icon: [Icons.html, Icons.css, Icons.bootstrap, Icons.materialUI],
+        },
+        {
+            title: "Node JS, .NET, PHP, Java Servlets",
+            icon: [Icons.nodejs, Icons.dotnet, Icons.php, Icons.java],
+        },
+        {
+            title: "MongoDB, MySQL, SQL Server",
+            icon: [Icons.mongodb, Icons.mysql, Icons.sqlserver],
+        },
+        {
+            title: "React Native and Android",
+            icon: [Icons.react, Icons.android],
+        },
+        {
+            title: "C#, C++, Python",
+            icon: [Icons.cSharp, Icons.cpp, Icons.python],
+        },
+        {
+            title: "Git, GitHub, GitLab",
+            icon: [Icons.git, Icons.github, Icons.gitlab],
+        },
+    ];
     return (
         <section className="section-about">
             <h1 className="color-primary">What I Do</h1>
@@ -68,15 +104,15 @@ const AboutSection = () => {
                 worked with:
             </p>
 
-            <div className="row">
+            <div className="row mt-4">
                 {technologies.map((tech) => {
                     return (
-                        <div className="col-md-4 mb-4">
+                        <div className="col-xl-4 col-lg-6 col-md-6 col-sm-6 mb-4">
                             <Paper>
                                 {tech.icon.map((icon) => {
                                     return <span className="tech-icon">{icon}</span>;
                                 })}
-                                <h5 className="mt-3 color-primary">{tech.title}</h5>
+                                <h6 className="mt-3 color-primary">{tech.title}</h6>
                             </Paper>
                         </div>
                     );
@@ -86,37 +122,55 @@ const AboutSection = () => {
     );
 };
 
-const technologies = [
-    {
-        title: "JavaScript, Typescript and jQuery",
-        icon: [Icons.js, Icons.ts, Icons.jquery],
-    },
-    {
-        title: "React JS and Angular",
-        icon: [Icons.react, Icons.angular],
-    },
-    {
-        title: "HTML, CSS, Bootstrap, MaterialUI",
-        icon: [Icons.html, Icons.css, Icons.bootstrap, Icons.materialUI],
-    },
-    {
-        title: "Node JS, .NET, PHP, Java Servlets",
-        icon: [Icons.nodejs, Icons.dotnet, Icons.php, Icons.java],
-    },
-    {
-        title: "MongoDB, MySQL, SQL Server",
-        icon: [Icons.mongodb, Icons.mysql, Icons.sqlserver],
-    },
-    {
-        title: "React Native and Android",
-        icon: [Icons.react, Icons.android],
-    },
-    {
-        title: "C#, C++, Python",
-        icon: [Icons.cSharp, Icons.cpp, Icons.python],
-    },
-    {
-        title: "Git, GitHub, GitLab",
-        icon: [Icons.git, Icons.github, Icons.gitlab],
-    },
-];
+const EducationSection = () => {
+    const academic = {
+        heading: "Education",
+        description:
+            "From childhood, I was interested in Computer Science and Information Technology and currently, I am pursuing a degree in Information Technology from Pakistan. Here is my educational background!",
+        education: [
+            {
+                id: 1,
+                degree: "Bachelor of Science in Information Technology",
+                duration: "Current",
+                institute: "Punjab University College of Information Techology.",
+                description:
+                    "Continuing to learn and explore my field of interest from one of the most reputable and oldest institute in Pakistan. PUCIT is the most famous and competitive department of Punjab University and I am lucky to be a part of it!",
+            },
+            {
+                id: 2,
+                degree: "Intermediate in Computer Science",
+                duration: "2017",
+                institute: "Superior College of Information Technology.",
+                description:
+                    "After matric, joined Superior College for my intermediate and took admission in ICS. From there, I learned my first programming language C, along with some basic concepts of Databases.",
+            },
+            {
+                id: 3,
+                degree: "Matriculation (Computer Science)",
+                duration: "2015",
+                institute: "The New School, Model Town, Lahore.",
+                description:
+                    "Completed my matriculation in the subjects of computer science from The New School located in Model Town Lahore. There I learned basics of computer science and not to forget THE GW BASIC.",
+            },
+        ],
+    };
+    return (
+        <section className="section-education">
+            <h1 className="color-primary">Education</h1>
+
+            <div className="timeline">
+                {academic.education.map((education) => {
+                    return (
+                        <TimeLine
+                            key={education.id}
+                            heading={education.degree}
+                            date={education.duration}
+                            subHeading={education.institute}
+                            description={education.description}
+                        />
+                    );
+                })}
+            </div>
+        </section>
+    );
+};
