@@ -1,13 +1,90 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #64ffda;
+    --secondary-dark: #000116;
+    --secondary-light: #090b23;
+    --tertiary-dark: #0a192f;
+    --tertiary-light: #112240;
+    --light-slate: #ccd6f6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: inherit;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--secondary-dark) !important;
+    color: white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.main {
+    padding: 0 200px;
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.footer {
+    background: var(--secondary-light);
+    text-align: center;
+    width: 75%;
+    position: relative;
+    left: 50%;
+    padding: 50px 0 40px 0;
+    transform: translateX(-50%);
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+}
+
+.footer-inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: var(--light-slate);
+}
+
+@media (max-width: 575px) {
+    .main {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .main {
+        padding: 0 60px;
+    }
 }
