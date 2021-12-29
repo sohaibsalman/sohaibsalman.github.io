@@ -43,7 +43,7 @@ code {
 }
 
 .main {
-    padding: 0 200px;
+    padding: 0 13%;
 }
 
 .color-primary {
@@ -53,7 +53,7 @@ code {
 .footer {
     background: var(--secondary-light);
     text-align: center;
-    width: 75%;
+    width: 80%;
     position: relative;
     left: 50%;
     padding: 50px 0 40px 0;
@@ -86,5 +86,15 @@ p {
 @media (min-width: 576px) and (max-width: 768px) {
     .main {
         padding: 0 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        padding: 0 50px;
+    }
+    .footer {
+        border-radius: 0;
+        width: 100%;
     }
 }

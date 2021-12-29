@@ -4,6 +4,7 @@ import Icons from "../../components/icons/devIcons";
 import TimeLine from "../../components/common/timeline/Timeline";
 
 import "./home.css";
+import Button from "../../components/common/button/Button";
 
 const Home = () => {
     return (
@@ -23,13 +24,20 @@ const MainSection = () => {
             <div className="row">
                 <div className="col-md-8">
                     <div className="home-main-content">
-                        <h4 className="color-primary home-sub-heading">Hey! I'm</h4>
+                        <h4 className="color-primary home-sub-heading">
+                            Hey! I'm
+                        </h4>
                         <h1 className="home-main-heading">Sohaib Salman</h1>
-                        <h3 className="home-designation color-primary">Software Engineer</h3>
+                        <h3 className="home-designation color-primary">
+                            Software Engineer
+                        </h3>
                         <p className="home-description">
-                            I'm a software developer and a self-learner, specializing in full-stack web application development with a focus to learn
-                            and excel in new tools and technologies.
+                            I'm a software developer and a self-learner,
+                            specializing in full-stack web application
+                            development with a focus to learn and excel in new
+                            tools and technologies.
                         </p>
+                        <Button text={"Get a Quote"} />
                     </div>
                 </div>
             </div>
