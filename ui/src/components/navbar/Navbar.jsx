@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./navbar.css";
 
@@ -71,7 +72,9 @@ const Navbar = () => {
                 <ul className="navbar-links">
                     {navbarLinks.map((link, index) => (
                         <li key={index} className="nav-link">
-                            <a href={link.url}>{link.title}</a>
+                            <Link to={link.url} onClick={handleNavbarToggle}>
+                                {link.title}
+                            </Link>
                         </li>
                     ))}
                 </ul>

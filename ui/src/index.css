@@ -44,6 +44,8 @@ code {
 
 .main {
     padding: 0 13%;
+    margin-top: 90px;
+    min-height: 100vh;
 }
 
 .color-primary {
@@ -60,6 +62,7 @@ code {
     transform: translateX(-50%);
     border-top-left-radius: 250px;
     border-top-right-radius: 250px;
+    bottom: 0;
 }
 
 .footer-inner {

@@ -4,7 +4,7 @@ import Icons from "../../components/icons/devIcons";
 import TimeLine from "../../components/common/timeline/Timeline";
 
 import "./home.css";
-import Button from "../../components/common/button/Button";
+import Button from "../../components/common/buttons/LinkButton";
 
 const Home = () => {
     return (
@@ -37,7 +37,7 @@ const MainSection = () => {
                             development with a focus to learn and excel in new
                             tools and technologies.
                         </p>
-                        <Button text={"Get a Quote"} />
+                        <Button text={"Get a Quote"} link={"/contact"} />
                     </div>
                 </div>
             </div>
